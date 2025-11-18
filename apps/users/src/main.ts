@@ -13,7 +13,7 @@ import {
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const globalPrefix = 'api/users/v1';
+  const globalPrefix = 'api/v1';
   app.setGlobalPrefix(globalPrefix);
 
   app.useGlobalPipes(

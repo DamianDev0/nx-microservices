@@ -8,28 +8,28 @@ export class UsersController {
   constructor(private readonly service: UsersService) {}
 
 @Post()
-create(@Body() dto: CreateUserDto) {
+async create(@Body() dto: CreateUserDto) {
   return this.service.create(dto);
 }
 
 
   @Get()
-  findAll() {
+  async findAll() {
     return this.service.findAll();
   }
 
   @Get(':id')
-  find(@Param('id') id: string) {
+  async find(@Param('id') id: string) {
     return this.service.findOne(id);
   }
 
   @Patch(':id')
-  update(@Param('id') id: string, @Body() dto: UpdateUserDto) {
+  async update(@Param('id') id: string, @Body() dto: UpdateUserDto) {
     return this.service.update(id, dto);
   }
 
   @Delete(':id')
-  remove(@Param('id') id: string) {
+  async remove(@Param('id') id: string) {
     return this.service.delete(id);
   }
 }

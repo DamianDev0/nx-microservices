@@ -18,7 +18,8 @@
     "paths": {
       "@microservices/shared": ["libs/shared/src/index.ts"],
       "@microservices/kafka": ["libs/kafka/src/index.ts"],
-      "@microservices/common": ["libs/common/src/index.ts"]
+      "@microservices/common": ["libs/common/src/index.ts"],
+      "@microservices/rabbitmq": ["libs/rabbitmq/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
