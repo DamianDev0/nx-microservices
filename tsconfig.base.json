@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "forceConsistentCasingInFileNames": false,
+    "baseUrl": ".",
+    "paths": {
+      "@microservices/shared": ["libs/shared/src/index.ts"],
+      "@microservices/kafka": ["libs/kafka/src/index.ts"],
+      "@microservices/common": ["libs/common/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
